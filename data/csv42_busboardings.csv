@@ -1,4 +1,4 @@
-Transit Agency,Observed,Model,Diff,Percent Diff
-CTA Bus,858936,873542,14606,0.02
-Pace Bus,103288,111936,8647.95,0.08
+Mode,Observed,Model,Diff,Percent Diff
+CTA,858936,873542,14606,0.02
+Pace,103288,111936,8647.95,0.08
 TOTAL,962224,985478,23254,0.02

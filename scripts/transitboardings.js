@@ -84,7 +84,7 @@ function updatemap() {
 }
 
 function drawmap() {
-var promise = $.getJSON("data/json/ringsectorstransitboardingupdate.json");
+var promise = $.getJSON("data/json/ringsectorswtransitboarding.json");
 promise.then(function(data) {
     var pacestop = L.geoJson(data, {
         style:pacestyle,
@@ -218,7 +218,7 @@ promise.then(function(data) {
 function pacestyle(feature) {
     if (whichone !== 'sharedif') {
     return {
-        fillColor: getColor(parseFloat(feature.properties['b_' + whichone]) * 100),
+        fillColor: getColor(parseFloat(feature.properties['b_' + whichone])),
         weight: 2,
         opacity: 1,
         color: 'white',
@@ -227,7 +227,7 @@ function pacestyle(feature) {
     }}
     else {
         return {
-            fillColor: getDiffColor(parseFloat(feature.properties['b_' + whichone])* 100),
+            fillColor: getDiffColor(-parseFloat(feature.properties['b_' + whichone])),
             weight: 2,
             opacity: 1,
             color: 'white',
@@ -240,7 +240,7 @@ function pacestyle(feature) {
 function ctastyle(feature) {
     if (whichone !== 'sharedif') {
         return {
-            fillColor: getColor(parseFloat(feature.properties['c_' + whichone])* 100),
+            fillColor: getColor(parseFloat(feature.properties['c_' + whichone])),
             weight: 2,
             opacity: 1,
             color: 'white',
@@ -249,7 +249,7 @@ function ctastyle(feature) {
         }}
         else {
             return {
-                fillColor: getDiffColor(parseFloat(feature.properties['c_' + whichone])* 100),
+                fillColor: getDiffColor(-parseFloat(feature.properties['c_' + whichone])),
                 weight: 2,
                 opacity: 1,
                 color: 'white',
@@ -262,7 +262,7 @@ function ctastyle(feature) {
 function metrastyle(feature) {
     if (whichone !== 'sharedif') {
         return {
-            fillColor: getColor(parseFloat(feature.properties['m_' + whichone]) * 100),
+            fillColor: getColor(parseFloat(feature.properties['m_' + whichone])),
             weight: 2,
             opacity: 1,
             color: 'white',
@@ -271,7 +271,7 @@ function metrastyle(feature) {
         }}
         else {
             return {
-                fillColor: getDiffColor(parseFloat(feature.properties['m_' + whichone] * 100)),
+                fillColor: getDiffColor(-parseFloat(feature.properties['m_' + whichone])),
                 weight: 2,
                 opacity: 1,
                 color: 'white',
@@ -315,7 +315,7 @@ info.onAdd = function(map) {
 info.update = function(props) {
     if (whichone !== 'sharedif') {
     this._div.innerHTML = '<h6>Share of Boardings</h6>' + (props ?
-    '<b>' + 'ring sector: ' + props.ringsector + '</b><br />' + 'share: ' + getsharevalue(props) + '%'
+    '<b>' + 'ring sector: ' + props.ringsector + '</b><br />' + 'share: ' + getsharevalue(props)
     :'Hover over a ring sector');
 }
     else {
@@ -328,21 +328,21 @@ info.update = function(props) {
 function getsharevalue(props) {
     if (whichone !== 'sharedif') {
     if ($("#metra").hasClass("btn-info")) {
-        var sharevalue = (props['m_' + whichone] * 100).toFixed(1)
+        var sharevalue = props['m_' + whichone]
     } else if ($("#pace").hasClass("btn-info")) {
-        var sharevalue = (props['b_' + whichone] * 100).toFixed(1)
+        var sharevalue = props['b_' + whichone]
     } else if ($("#cta").hasClass("btn-info")) {
-        var sharevalue = (props['c_' + whichone] * 100).toFixed(1)
+        var sharevalue = props['c_' + whichone]
     } else {
         var sharevalue = 0
     }}
     else {
         if ($("#metra").hasClass("btn-info")) {
-            var sharevalue = (parseFloat(props['m_' + whichone] * 100)).toFixed(1)
+            var sharevalue = -parseFloat(props['m_' + whichone])
         } else if ($("#pace").hasClass("btn-info")) {
-            var sharevalue = (parseFloat(props['b_' + whichone] * 100)).toFixed(1)
+            var sharevalue = -parseFloat(props['b_' + whichone])
         } else if ($("#cta").hasClass("btn-info")) {
-            var sharevalue = (parseFloat(props['c_' + whichone] * 100)).toFixed(1)
+            var sharevalue = -parseFloat(props['c_' + whichone])
         } else {
             var sharevalue = 0
     }}
@@ -477,7 +477,7 @@ var cta = L.geoJson(ctalines, {
 });
 
 var overlayMaps = {
-    "CTA Rail lines": cta,
+    "CTA lines": cta,
     "Metra lines": metra
 };
 

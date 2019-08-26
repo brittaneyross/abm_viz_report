@@ -1,122 +1,122 @@
-Index,Model 01,Survey 01,Category,Description,Title,Portion
-Drive alone free,13271835,13383241,All,All Drive alone free trips,All,100.0%
-Shared ride 2 free,5680670,6525173,All,All Shared ride 2 free trips,All,100.0%
-Shared ride 3+ free,5146245,5496839,All,All Shared ride 3+ free trips,All,100.0%
-Walk,4420785,3053530,All,All Walk trips,All,100.0%
-Drive alone free,3929950,3804364,Work,work Drive alone free trips,Work,18.7%
-Drive alone free,2463615,2458145,Shop,shop Drive alone free trips,Shop,18.4%
-Drive alone free,1835220,2170181,Maintenance,maintenance Drive alone free trips,Maintenance,13.3%
-Transit,1626340,1523625,All,All Walk to transit trips,All,100.0%
-Drive alone free,1596745,1343359,Escort,escort Drive alone free trips,Escort,11.8%
-Shared ride 2 free,1465530,1382379,Shop,shop Shared ride 2 free trips,Shop,18.4%
-Shared ride 3+ free,1099090,1199544,Escort,escort Shared ride 3+ free trips,Escort,11.8%
-Shared ride 3+ free,1005765,972954,Shop,shop Shared ride 3+ free trips,Shop,18.4%
-Shared ride 2 free,996405,1031332,Maintenance,maintenance Shared ride 2 free trips,Maintenance,13.3%
-Drive alone free,984915,1023730,Discretionary,discretionary Drive alone free trips,Discretionary,10.7%
-Shared ride 3+ free,951970,865383,Discretionary,discretionary Shared ride 3+ free trips,Discretionary,10.7%
-School bus,878250,752635,All,All School bus trips,All,100.0%
-School bus,878250,701437,School,school School bus trips,School,8.4%
-Walk,850740,534471,School,school Walk trips,School,8.4%
-Drive alone free,833830,876801,Eating Out,eatingout Drive alone free trips,Eating Out,7.6%
-Drive alone free,775065,738893,Work-based,work-based Drive alone free trips,Work-based,3.6%
-Shared ride 2 free,747840,834218,Discretionary,discretionary Shared ride 2 free trips,Discretionary,10.7%
-Transit,690020,706519,Work,work Walk to transit trips,Work,18.7%
-Walk,643170,515354,Shop,shop Walk trips,Shop,18.4%
-Walk,626485,370217,Maintenance,maintenance Walk trips,Maintenance,13.3%
-Shared ride 3+ free,595670,628749,Eating Out,eatingout Shared ride 3+ free trips,Eating Out,7.6%
-Shared ride 2 free,594370,665455,Eating Out,eatingout Shared ride 2 free trips,Eating Out,7.6%
-Drive alone free,589925,701336,Visiting,visiting Drive alone free trips,Visiting,6.2%
-Walk,548765,310484,Work,work Walk trips,Work,18.7%
-Walk,544980,426040,Discretionary,discretionary Walk trips,Discretionary,10.7%
-Shared ride 3+ free,538220,792900,Maintenance,maintenance Shared ride 3+ free trips,Maintenance,13.3%
-Shared ride 2 free,507315,1175271,Escort,escort Shared ride 2 free trips,Escort,11.8%
-Shared ride 3+ free,470855,423868,Visiting,visiting Shared ride 3+ free trips,Visiting,6.2%
-Shared ride 2 free,455800,473413,Visiting,visiting Shared ride 2 free trips,Visiting,6.2%
-Shared ride 2 free,426485,345304,Work,work Shared ride 2 free trips,Work,18.7%
-Walk,370655,263474,Escort,escort Walk trips,Escort,11.8%
-Shared ride 2 free,365285,530305,School,school Shared ride 2 free trips,School,8.4%
-Shared ride 3+ free,363215,511859,School,school Shared ride 3+ free trips,School,8.4%
-Bike,329390,262120,All,All Bike trips,All,100.0%
-Walk,318255,271809,Visiting,visiting Walk trips,Visiting,6.2%
-Drive alone pay,256355,389394,All,All Drive alone pay trips,All,100.0%
-Walk,255215,273748,Eating Out,eatingout Walk trips,Eating Out,7.6%
-Transit,203775,144911,Shop,shop Walk to transit trips,Shop,18.4%
-Walk,191010,50014,Work-based,work-based Walk trips,Work-based,3.6%
-Drive alone free,176875,173196,University,university Drive alone free trips,University,1.2%
-Transit,135485,201072,Maintenance,maintenance Walk to transit trips,Maintenance,13.3%
-Transit,134070,46890,Escort,escort Walk to transit trips,Escort,11.8%
-Transit,113370,45197,Eating Out,eatingout Walk to transit trips,Eating Out,7.6%
-Bike,112525,64542,Work,work Bike trips,Work,18.7%
-Drive alone pay,112465,220216,Work,work Drive alone pay trips,Work,18.7%
-Transit,105625,96580,Discretionary,discretionary Walk to transit trips,Discretionary,10.7%
-Taxi,99770,70019,All,All Taxi trips,All,100.0%
-Shared ride 3+ free,92325,77540,Work,work Shared ride 3+ free trips,Work,18.7%
-Drive alone free,85695,93236,School,school Drive alone free trips,School,8.4%
-Transit,78530,108980,School,school Walk to transit trips,School,8.4%
-Walk,71510,37919,University,university Walk trips,University,1.2%
-Transit,70565,34745,Work-based,work-based Walk to transit trips,Work-based,3.6%
-Shared ride 2 free,69495,57125,Work-based,work-based Shared ride 2 free trips,Work-based,3.6%
-Transit,65320,69803,Visiting,visiting Walk to transit trips,Visiting,6.2%
-Shared ride 3+ pay,62510,20558,All,All Shared ride 3+ pay trips,All,100.0%
-Shared ride 2 free,52145,30371,University,university Shared ride 2 free trips,University,1.2%
-Bike,44345,27745,School,school Bike trips,School,8.4%
-Shared ride 2 pay,40440,42988,All,All Shared ride 2 pay trips,All,100.0%
-Bike,35690,56428,Discretionary,discretionary Bike trips,Discretionary,10.7%
-Bike,29655,30579,Maintenance,maintenance Bike trips,Maintenance,13.3%
-Transit,29580,68928,University,university Walk to transit trips,University,1.2%
-Drive alone pay,25620,22889,Shop,shop Drive alone pay trips,Shop,18.4%
-Drive alone pay,25075,32546,Maintenance,maintenance Drive alone pay trips,Maintenance,13.3%
-Bike,24970,29921,Visiting,visiting Bike trips,Visiting,6.2%
-Taxi,24960,155,University,university Taxi trips,University,1.2%
-Bike,23855,26924,Shop,shop Bike trips,Shop,18.4%
-Drive alone pay,22670,16297,Escort,escort Drive alone pay trips,Escort,11.8%
-Drive alone pay,19265,39538,Work-based,work-based Drive alone pay trips,Work-based,3.6%
-Taxi,18330,12672,Work,work Taxi trips,Work,18.7%
-Bike,17980,5767,Escort,escort Bike trips,Escort,11.8%
-Drive alone pay,17680,10215,Discretionary,discretionary Drive alone pay trips,Discretionary,10.7%
-Bike,17385,3905,University,university Bike trips,University,1.2%
-Taxi,17180,17676,Maintenance,maintenance Taxi trips,Maintenance,13.3%
-Bike,16160,11713,Eating Out,eatingout Bike trips,Eating Out,7.6%
-Shared ride 3+ free,15995,20244,Work-based,work-based Shared ride 3+ free trips,Work-based,3.6%
-Drive alone pay,14845,22556,Visiting,visiting Drive alone pay trips,Visiting,6.2%
-Shared ride 3+ pay,14825,3865,Discretionary,discretionary Shared ride 3+ pay trips,Discretionary,10.7%
-Shared ride 3+ free,13140,3798,University,university Shared ride 3+ free trips,University,1.2%
-Drive alone pay,11980,13264,Eating Out,eatingout Drive alone pay trips,Eating Out,7.6%
-Shared ride 3+ pay,11225,3653,Visiting,visiting Shared ride 3+ pay trips,Visiting,6.2%
-Taxi,9870,7118,Shop,shop Taxi trips,Shop,18.4%
-Taxi,8445,6991,Work-based,work-based Taxi trips,Work-based,3.6%
-Shared ride 3+ pay,7635,3639,Shop,shop Shared ride 3+ pay trips,Shop,18.4%
-Shared ride 3+ pay,7625,4382,Escort,escort Shared ride 3+ pay trips,Escort,11.8%
-Shared ride 2 pay,7285,3761,Maintenance,maintenance Shared ride 2 pay trips,Maintenance,13.3%
-Shared ride 3+ pay,7260,3056,Eating Out,eatingout Shared ride 3+ pay trips,Eating Out,7.6%
-Taxi,6970,1248,Escort,escort Taxi trips,Escort,11.8%
-Shared ride 3+ pay,6845,1416,Maintenance,maintenance Shared ride 3+ pay trips,Maintenance,13.3%
-Bike,6825,4596,Work-based,work-based Bike trips,Work-based,3.6%
-Shared ride 2 pay,5905,13985,Work,work Shared ride 2 pay trips,Work,18.7%
-Drive alone pay,5870,11873,University,university Drive alone pay trips,University,1.2%
-Taxi,5330,7592,Eating Out,eatingout Taxi trips,Eating Out,7.6%
-Shared ride 2 pay,5100,2112,Shop,shop Shared ride 2 pay trips,Shop,18.4%
-Shared ride 2 pay,5035,6856,Discretionary,discretionary Shared ride 2 pay trips,Discretionary,10.7%
-Taxi,4920,7342,Discretionary,discretionary Taxi trips,Discretionary,10.7%
-Shared ride 2 pay,4375,7271,Escort,escort Shared ride 2 pay trips,Escort,11.8%
-Shared ride 2 pay,4130,5205,Visiting,visiting Shared ride 2 pay trips,Visiting,6.2%
-Shared ride 2 pay,3365,2507,Eating Out,eatingout Shared ride 2 pay trips,Eating Out,7.6%
-Shared ride 3+ pay,3305,547,Work,work Shared ride 3+ pay trips,Work,18.7%
-Taxi,2890,7618,Visiting,visiting Taxi trips,Visiting,6.2%
-Shared ride 3+ pay,2350,0,School,school Shared ride 3+ pay trips,School,8.4%
-Shared ride 2 pay,2140,0,School,school Shared ride 2 pay trips,School,8.4%
-Shared ride 2 pay,2095,23,University,university Shared ride 2 pay trips,University,1.2%
-Shared ride 2 pay,1010,1268,Work-based,work-based Shared ride 2 pay trips,Work-based,3.6%
-Shared ride 3+ pay,925,0,University,university Shared ride 3+ pay trips,University,1.2%
-Drive alone pay,885,0,School,school Drive alone pay trips,School,8.4%
-Taxi,875,1607,School,school Taxi trips,School,8.4%
-Shared ride 3+ pay,515,0,Work-based,work-based Shared ride 3+ pay trips,Work-based,3.6%
-School bus,0,0,Discretionary,discretionary School bus trips,Discretionary,10.7%
-School bus,0,0,Eating Out,eatingout School bus trips,Eating Out,7.6%
-School bus,0,0,Escort,escort School bus trips,Escort,11.8%
-School bus,0,0,Maintenance,maintenance School bus trips,Maintenance,13.3%
-School bus,0,0,Shop,shop School bus trips,Shop,18.4%
-School bus,0,0,University,university School bus trips,University,1.2%
-School bus,0,0,Visiting,visiting School bus trips,Visiting,6.2%
-School bus,0,0,Work,work School bus trips,Work,18.7%
-School bus,0,0,Work-based,work-based School bus trips,Work-based,3.6%
+Index,Model 01,Survey 01,Category,Description,Title
+Drive alone free,13271835,13383241,All,All Drive alone free trips,All
+Shared ride 2 free,5680670,6525173,All,All Shared ride 2 free trips,All
+Shared ride 3+ free,5146245,5496839,All,All Shared ride 3+ free trips,All
+Walk,4420785,3053530,All,All Walk trips,All
+Drive alone free,3929950,3804364,Work,work Drive alone free trips,Work
+Drive alone free,2463615,2458145,Shop,shop Drive alone free trips,Shop
+Drive alone free,1835220,2170181,Maintenance,maintenance Drive alone free trips,Maintenance
+Transit,1626340,1523625,All,All Walk to transit trips,All
+Drive alone free,1596745,1343359,Escort,escort Drive alone free trips,Escort
+Shared ride 2 free,1465530,1382379,Shop,shop Shared ride 2 free trips,Shop
+Shared ride 3+ free,1099090,1199544,Escort,escort Shared ride 3+ free trips,Escort
+Shared ride 3+ free,1005765,972954,Shop,shop Shared ride 3+ free trips,Shop
+Shared ride 2 free,996405,1031332,Maintenance,maintenance Shared ride 2 free trips,Maintenance
+Drive alone free,984915,1023730,Discretionary,discretionary Drive alone free trips,Discretionary
+Shared ride 3+ free,951970,865383,Discretionary,discretionary Shared ride 3+ free trips,Discretionary
+School bus,878250,752635,All,All School bus trips,All
+School bus,878250,701437,School,school School bus trips,School
+Walk,850740,534471,School,school Walk trips,School
+Drive alone free,833830,876801,Eating Out,eatingout Drive alone free trips,Eating Out
+Drive alone free,775065,738893,Work-based,work-based Drive alone free trips,Work-based
+Shared ride 2 free,747840,834218,Discretionary,discretionary Shared ride 2 free trips,Discretionary
+Transit,690020,706519,Work,work Walk to transit trips,Work
+Walk,643170,515354,Shop,shop Walk trips,Shop
+Walk,626485,370217,Maintenance,maintenance Walk trips,Maintenance
+Shared ride 3+ free,595670,628749,Eating Out,eatingout Shared ride 3+ free trips,Eating Out
+Shared ride 2 free,594370,665455,Eating Out,eatingout Shared ride 2 free trips,Eating Out
+Drive alone free,589925,701336,Visiting,visiting Drive alone free trips,Visiting
+Walk,548765,310484,Work,work Walk trips,Work
+Walk,544980,426040,Discretionary,discretionary Walk trips,Discretionary
+Shared ride 3+ free,538220,792900,Maintenance,maintenance Shared ride 3+ free trips,Maintenance
+Shared ride 2 free,507315,1175271,Escort,escort Shared ride 2 free trips,Escort
+Shared ride 3+ free,470855,423868,Visiting,visiting Shared ride 3+ free trips,Visiting
+Shared ride 2 free,455800,473413,Visiting,visiting Shared ride 2 free trips,Visiting
+Shared ride 2 free,426485,345304,Work,work Shared ride 2 free trips,Work
+Walk,370655,263474,Escort,escort Walk trips,Escort
+Shared ride 2 free,365285,530305,School,school Shared ride 2 free trips,School
+Shared ride 3+ free,363215,511859,School,school Shared ride 3+ free trips,School
+Bike,329390,262120,All,All Bike trips,All
+Walk,318255,271809,Visiting,visiting Walk trips,Visiting
+Drive alone pay,256355,389394,All,All Drive alone pay trips,All
+Walk,255215,273748,Eating Out,eatingout Walk trips,Eating Out
+Transit,203775,144911,Shop,shop Walk to transit trips,Shop
+Walk,191010,50014,Work-based,work-based Walk trips,Work-based
+Drive alone free,176875,173196,University,university Drive alone free trips,University
+Transit,135485,201072,Maintenance,maintenance Walk to transit trips,Maintenance
+Transit,134070,46890,Escort,escort Walk to transit trips,Escort
+Transit,113370,45197,Eating Out,eatingout Walk to transit trips,Eating Out
+Bike,112525,64542,Work,work Bike trips,Work
+Drive alone pay,112465,220216,Work,work Drive alone pay trips,Work
+Transit,105625,96580,Discretionary,discretionary Walk to transit trips,Discretionary
+Taxi,99770,70019,All,All Taxi trips,All
+Shared ride 3+ free,92325,77540,Work,work Shared ride 3+ free trips,Work
+Drive alone free,85695,93236,School,school Drive alone free trips,School
+Transit,78530,108980,School,school Walk to transit trips,School
+Walk,71510,37919,University,university Walk trips,University
+Transit,70565,34745,Work-based,work-based Walk to transit trips,Work-based
+Shared ride 2 free,69495,57125,Work-based,work-based Shared ride 2 free trips,Work-based
+Transit,65320,69803,Visiting,visiting Walk to transit trips,Visiting
+Shared ride 3+ pay,62510,20558,All,All Shared ride 3+ pay trips,All
+Shared ride 2 free,52145,30371,University,university Shared ride 2 free trips,University
+Bike,44345,27745,School,school Bike trips,School
+Shared ride 2 pay,40440,42988,All,All Shared ride 2 pay trips,All
+Bike,35690,56428,Discretionary,discretionary Bike trips,Discretionary
+Bike,29655,30579,Maintenance,maintenance Bike trips,Maintenance
+Transit,29580,68928,University,university Walk to transit trips,University
+Drive alone pay,25620,22889,Shop,shop Drive alone pay trips,Shop
+Drive alone pay,25075,32546,Maintenance,maintenance Drive alone pay trips,Maintenance
+Bike,24970,29921,Visiting,visiting Bike trips,Visiting
+Taxi,24960,155,University,university Taxi trips,University
+Bike,23855,26924,Shop,shop Bike trips,Shop
+Drive alone pay,22670,16297,Escort,escort Drive alone pay trips,Escort
+Drive alone pay,19265,39538,Work-based,work-based Drive alone pay trips,Work-based
+Taxi,18330,12672,Work,work Taxi trips,Work
+Bike,17980,5767,Escort,escort Bike trips,Escort
+Drive alone pay,17680,10215,Discretionary,discretionary Drive alone pay trips,Discretionary
+Bike,17385,3905,University,university Bike trips,University
+Taxi,17180,17676,Maintenance,maintenance Taxi trips,Maintenance
+Bike,16160,11713,Eating Out,eatingout Bike trips,Eating Out
+Shared ride 3+ free,15995,20244,Work-based,work-based Shared ride 3+ free trips,Work-based
+Drive alone pay,14845,22556,Visiting,visiting Drive alone pay trips,Visiting
+Shared ride 3+ pay,14825,3865,Discretionary,discretionary Shared ride 3+ pay trips,Discretionary
+Shared ride 3+ free,13140,3798,University,university Shared ride 3+ free trips,University
+Drive alone pay,11980,13264,Eating Out,eatingout Drive alone pay trips,Eating Out
+Shared ride 3+ pay,11225,3653,Visiting,visiting Shared ride 3+ pay trips,Visiting
+Taxi,9870,7118,Shop,shop Taxi trips,Shop
+Taxi,8445,6991,Work-based,work-based Taxi trips,Work-based
+Shared ride 3+ pay,7635,3639,Shop,shop Shared ride 3+ pay trips,Shop
+Shared ride 3+ pay,7625,4382,Escort,escort Shared ride 3+ pay trips,Escort
+Shared ride 2 pay,7285,3761,Maintenance,maintenance Shared ride 2 pay trips,Maintenance
+Shared ride 3+ pay,7260,3056,Eating Out,eatingout Shared ride 3+ pay trips,Eating Out
+Taxi,6970,1248,Escort,escort Taxi trips,Escort
+Shared ride 3+ pay,6845,1416,Maintenance,maintenance Shared ride 3+ pay trips,Maintenance
+Bike,6825,4596,Work-based,work-based Bike trips,Work-based
+Shared ride 2 pay,5905,13985,Work,work Shared ride 2 pay trips,Work
+Drive alone pay,5870,11873,University,university Drive alone pay trips,University
+Taxi,5330,7592,Eating Out,eatingout Taxi trips,Eating Out
+Shared ride 2 pay,5100,2112,Shop,shop Shared ride 2 pay trips,Shop
+Shared ride 2 pay,5035,6856,Discretionary,discretionary Shared ride 2 pay trips,Discretionary
+Taxi,4920,7342,Discretionary,discretionary Taxi trips,Discretionary
+Shared ride 2 pay,4375,7271,Escort,escort Shared ride 2 pay trips,Escort
+Shared ride 2 pay,4130,5205,Visiting,visiting Shared ride 2 pay trips,Visiting
+Shared ride 2 pay,3365,2507,Eating Out,eatingout Shared ride 2 pay trips,Eating Out
+Shared ride 3+ pay,3305,547,Work,work Shared ride 3+ pay trips,Work
+Taxi,2890,7618,Visiting,visiting Taxi trips,Visiting
+Shared ride 3+ pay,2350,0,School,school Shared ride 3+ pay trips,School
+Shared ride 2 pay,2140,0,School,school Shared ride 2 pay trips,School
+Shared ride 2 pay,2095,23,University,university Shared ride 2 pay trips,University
+Shared ride 2 pay,1010,1268,Work-based,work-based Shared ride 2 pay trips,Work-based
+Shared ride 3+ pay,925,0,University,university Shared ride 3+ pay trips,University
+Drive alone pay,885,0,School,school Drive alone pay trips,School
+Taxi,875,1607,School,school Taxi trips,School
+Shared ride 3+ pay,515,0,Work-based,work-based Shared ride 3+ pay trips,Work-based
+School bus,0,0,Discretionary,discretionary School bus trips,Discretionary
+School bus,0,0,Eating Out,eatingout School bus trips,Eating Out
+School bus,0,0,Escort,escort School bus trips,Escort
+School bus,0,0,Maintenance,maintenance School bus trips,Maintenance
+School bus,0,0,Shop,shop School bus trips,Shop
+School bus,0,0,University,university School bus trips,University
+School bus,0,0,Visiting,visiting School bus trips,Visiting
+School bus,0,0,Work,work School bus trips,Work
+School bus,0,0,Work-based,work-based School bus trips,Work-based

@@ -1,6 +1,6 @@
 function make_h_stacked_tripsbymode(csv_file,divID, legendID){
     var margin = {top: 80, right: 10, bottom: 0, left: 75},
-      width = 800 - margin.left - margin.right,
+      width = 900 - margin.left - margin.right,
       height = 300 - margin.top - margin.bottom;
 
 
@@ -24,16 +24,16 @@ function make_h_stacked_tripsbymode(csv_file,divID, legendID){
       Transit: 'Transit',
       Shared_ride_2plus_pay: 'HOV',
       Taxi: 'HOV',
-      work: 'Mandatory',
-      shop: 'Non-mandatory',
-      maintenance: 'Non-mandatory',
-      escort: 'Non-mandatory',
-      discretionary: 'Non-mandatory',
-      eating_out: 'Non-mandatory',
-      school: 'Mandatory',
-      visiting: 'Non-mandatory',
-      work_based: 'Non-mandatory',
-      university: 'Mandatory'
+      Work: 'Mandatory',
+      Shop: 'Non-mandatory',
+      Maintenance: 'Non-mandatory',
+      Escort: 'Non-mandatory',
+      Discretionary: 'Non-mandatory',
+      Eating_out: 'Non-mandatory',
+      School: 'Mandatory',
+      Visiting: 'Non-mandatory',
+      Work_based: 'Non-mandatory',
+      University: 'Mandatory'
     }
 
       var y = d3.scaleBand()
@@ -54,12 +54,8 @@ function make_h_stacked_tripsbymode(csv_file,divID, legendID){
       .attr("class", "bartooltip")
       .style("opacity", 0);
 
-      d3.csv(csv_file, function(d, i, columns) {
-          for (i = 1, t = 0; i < columns.length; ++i) t += d[columns[i]] = +d[columns[i]];
-          d.total = t;
-          return d;
-        },
-        function(error, data) {
+      d3.csv(csv_file, type, function (error, data) {
+          if (error) throw error;
 
           // List of subgroups = header of the csv files = soil condition here
           var subgroups = data.columns.slice(1)
@@ -82,53 +78,52 @@ function make_h_stacked_tripsbymode(csv_file,divID, legendID){
             var obsvalue;
             var modelvalue;
 
-            d3.selectAll("." + divID + "class").style("opacity", 0.2).select("div.html").remove();
+            d3.selectAll("."+divID+"class").style("opacity", 0.2).select("text").remove();
 
             var bardata = serie.selectAll("rect")
-              .data(function(d) {
-                if (d.key == subgroupName) {
-                  modelvalue = (d[0].data[subgroupName])
-                  obsvalue = (d[1].data[subgroupName])
-                }
-                return d
-              })
+                .data(function (d) {
+                  if(d.key == subgroupName){
+                    //this csv is in the other order, so the names are switched!!
+                    modelvalue =  (d[0].data[subgroupName])
+                    obsvalue =  (d[1].data[subgroupName])
+                  }
+                  return d
+                })
 
-            //console.log(obsvalue)
-            div.transition()
-              //.attr("class","popuptext")
+              //console.log(obsvalue)
+              div.transition()
               .duration(200)
               .style("opacity", .9);
-            div.html(
+              div.html(
+                typeobj[subgroupName] +
                 "<br><b><p style='font-size: 12px'; color: grey'>" + subgroupName.replace(/_/g, " ") +
-                "</p></b><p style='color:rgb(28, 78, 128); font-size: 20px; margin-bottom: 0px;'>" + d3.formatPrefix(".2s",1e6)(modelvalue) +
+                "</p></b><p style='color:rgb(28, 78, 128); font-size: 20px; margin-bottom: 0px;'>" + d3.format(".4~s")(modelvalue) +
                 "</p><p style='color:grey; font-size: 10px;'> modeled" +
-                "</p><p style='color:rgb(166, 186, 206); font-size: 20px; margin-bottom: 0px;'>" + d3.formatPrefix(".2s",1e6)(obsvalue) +
+                "</p><p style='color:rgb(166, 186, 206); font-size: 20px; margin-bottom: 0px;'>" + d3.format(".4~s")(obsvalue) +
                 "</p><p style='color:grey; font-size: 10px;'> observed </p>"
-              )
-              .style("left", x * 0.7 + "px")
-              .style("top", function() {
-                if (y < 120) {
-                  return (y * 2 + "px")
-                } else {
-                  return (y) + "px"
+                )
+                .style("left", x*0.7 + "px")
+                .style("top",  function() {
+                  if (y < 120){
+                    return (y*2  + "px")}
+                  else {
+                    return (y) + "px"
                 }
               })
 
+              // Highlight all rects of this subgroup with opacity 0.8. It is possible to select them since they have a specific class = their name.
+              d3.selectAll("."+ subgroupName)
+                .style("opacity", 1)
+            }
 
-            // Highlight all rects of this subgroup with opacity 0.8. It is possible to select them since they have a specific class = their name.
-            d3.selectAll("." + subgroupName)
-              .style("opacity", 1)
-          }
-
-          // When user do not hover anymore
-          var mouseleave = function(d) {
-            // Back to normal opacity: 0.8
-            d3.selectAll("." + divID + "class")
-              .style("opacity", 0.8)
-              .select("div.html").remove();
+        // When user do not hover anymore
+        var mouseleave = function(d) {
+          // Back to normal opacity: 0.8
+          d3.selectAll("."+divID+"class")
+            .style("opacity",0.8)
+            .select("text").remove();
 
             d3.selectAll(".bartooltip").style("opacity", 0);
-
           }
 
 
@@ -161,27 +156,6 @@ function make_h_stacked_tripsbymode(csv_file,divID, legendID){
             .attr("height", y.bandwidth())
             .on("mouseover", mouseover)
             .on("mouseout", mouseleave)
-
-
-            var format = d3.format(",.0f")
-
-            var bartext = serie.selectAll("text.rect")
-            .data(function(d) {
-              return d;
-            })
-            .enter()
-            .append("text")
-            .attr("x", function(d) {
-              return x(d[0]) + width + 45;
-            })
-            .attr("y", function(d) {
-              return y(d.data.Index) + y.bandwidth()/2;
-            })
-            .text(function(d) {
-              return "Total: " + format(d.data.total);
-            })
-            .attr("font-size","16px")
-            .attr("fill","black")
 
         g.append("g")
             .attr("class", "axis axis--y")

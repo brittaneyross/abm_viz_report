@@ -1,13 +1,13 @@
-Index,Model 01,Survey 01,Category,Description,Title,Portion
-Autos < Adults (18 yrs or older),44970,41551.62133,dtransit,Drive to transit Autos < Adults (18 yrs or older),Drive to transit,10.7%
-Autos < Adults (18 yrs or older),478055,402413.0633,transit,Walk to transit Autos < Adults (18 yrs or older),Walk to transit,89.3%
-Autos = Adults (18 yrs or older),77100,102022.971,dtransit,Drive to transit Autos = Adults (18 yrs or older),Drive to transit,10.7%
-Autos = Adults (18 yrs or older),170010,349275.6468,transit,Walk to transit Autos = Adults (18 yrs or older),Walk to transit,89.3%
-Autos > Adults (18 yrs or older),38240,25294.77677,dtransit,Drive to transit Autos > Adults (18 yrs or older),Drive to transit,10.7%
-Autos > Adults (18 yrs or older),69205,47107.29142,transit,Walk to transit Autos > Adults (18 yrs or older),Walk to transit,89.3%
-No Autos,9970,8584.859831,dtransit,Drive to transit No Autos,Drive to transit,10.7%
-No Autos,700355,549253.1524,transit,Walk to transit No Autos,Walk to transit,89.3%
-Autos < Adults (18 yrs or older),523025,443964.6846,all,All Autos < Adults (18 yrs or older),All,100.0%
-Autos = Adults (18 yrs or older),247110,451298.6178,all,All Autos = Adults (18 yrs or older),All,100.0%
-Autos > Adults (18 yrs or older),107445,72402.06819,all,All Autos > Adults (18 yrs or older),All,100.0%
-No Autos,710325,557838.0122,all,All No Autos,All,100.0%
+Index,Model 01,Survey 01,Category,Description,Title
+Autos < Adults (18 yrs or older),44970.0,41551.621327005,dtransit,Drive to transit Autos < Adults (18 yrs or older),Drive to transit
+Autos < Adults (18 yrs or older),478055.0,402413.06325859064,transit,Walk to transit Autos < Adults (18 yrs or older),Walk to transit
+Autos = Adults (18 yrs or older),77100.0,102022.97097918995,dtransit,Drive to transit Autos = Adults (18 yrs or older),Drive to transit
+Autos = Adults (18 yrs or older),170010.0,349275.64682758006,transit,Walk to transit Autos = Adults (18 yrs or older),Walk to transit
+Autos > Adults (18 yrs or older),38240.0,25294.776771849996,dtransit,Drive to transit Autos > Adults (18 yrs or older),Drive to transit
+Autos > Adults (18 yrs or older),69205.0,47107.29142144995,transit,Walk to transit Autos > Adults (18 yrs or older),Walk to transit
+No Autos,9970.0,8584.859831309997,dtransit,Drive to transit No Autos,Drive to transit
+No Autos,700355.0,549253.1523615188,transit,Walk to transit No Autos,Walk to transit
+Autos < Adults (18 yrs or older),523025.0,443964.68458559527,all,All Autos < Adults (18 yrs or older),All
+Autos = Adults (18 yrs or older),247110.0,451298.61780677113,all,All Autos = Adults (18 yrs or older),All
+Autos > Adults (18 yrs or older),107445.0,72402.06819329999,all,All Autos > Adults (18 yrs or older),All
+No Autos,710325.0,557838.0121928294,all,All No Autos,All

@@ -1,40 +1,25 @@
-Index,Model 01,Survey 01,Category,Description,Title,Portion
-Less than 2.5 Mile,356720,154387.3262,Distance,All Less than 2.5 Mile,All,100.00%
-2.5-5 Mile,370550,297000.4657,Distance,All 2.5-5 Mile,All,100.00%
-5-10 Mile,504955,383821.9804,Distance,All 5-10 Mile,All,100.00%
-10-15 Mile,240900,219303.4578,Distance,All 10-15 Mile,All,100.00%
-15-20 Mile,71325,114899.8444,Distance,All 15-20 Mile,All,100.00%
-20-25 Mile,26780,81746.36539,Distance,All 20-25 Mile,All,100.00%
-25-30 Mile,20450,72818.25991,Distance,All 25-30 Mile,All,100.00%
-30 Miles or More,34660,166879.1335,Distance,All 30 Miles or More,All,100.00%
-Less than 2.5 Mile,17500,1492.843889,dtransit,Drive to transit Less than 2.5 Mile,Drive to transit,10.10%
-2.5-5 Mile,23510,2580.631333,dtransit,Drive to transit 2.5-5 Mile,Drive to transit,10.10%
-5-10 Mile,36980,14304.66187,dtransit,Drive to transit 5-10 Mile,Drive to transit,10.10%
-10-15 Mile,29300,20377.18814,dtransit,Drive to transit 10-15 Mile,Drive to transit,10.10%
-15-20 Mile,13960,22740.30033,dtransit,Drive to transit 15-20 Mile,Drive to transit,10.10%
-20-25 Mile,9530,16052.21108,dtransit,Drive to transit 20-25 Mile,Drive to transit,10.10%
-25-30 Mile,10130,27576.88333,dtransit,Drive to transit 25-30 Mile,Drive to transit,10.10%
-30 Miles or More,23300,69740.63355,dtransit,Drive to transit 30 Miles or More,Drive to transit,10.10%
-Less than 2.5 Mile,339220,152894.4823,transit,Walk to transit Less than 2.5 Mile,Walk to transit,89.90%
-2.5-5 Mile,347040,294419.8343,transit,Walk to transit 2.5-5 Mile,Walk to transit,89.90%
-5-10 Mile,467975,369517.3185,transit,Walk to transit 5-10 Mile,Walk to transit,89.90%
-10-15 Mile,211600,198926.2697,transit,Walk to transit 10-15 Mile,Walk to transit,89.90%
-15-20 Mile,57365,92159.5441,transit,Walk to transit 15-20 Mile,Walk to transit,89.90%
-20-25 Mile,17250,65694.15431,transit,Walk to transit 20-25 Mile,Walk to transit,89.90%
-25-30 Mile,10320,45241.37659,transit,Walk to transit 25-30 Mile,Walk to transit,89.90%
-30 Miles or More,11360,97138.49999,transit,Walk to transit 30 Miles or More,Walk to transit,89.90%
-Less than $35k,588895,514518.3063,Income,All Less than $35k,All,100.00%
-Less than $35k,33220,15263.84838,dtransit,Drive to transit Less than $35k,Drive to transit,10.10%
-Less than $35k,555675,499254.4579,transit,Walk to transit Less than $35k,Walk to transit,89.90%
-$35k to $50k,420580,194247.4665,Income,All $35k to $50k,All,100.00%
-$35k to $50k,33390,11628.58973,dtransit,Drive to transit $35k to $50k,Drive to transit,10.10%
-$35k to $50k,387190,182618.8768,transit,Walk to transit $35k to $50k,Walk to transit,89.90%
-$50k to $75k,202705,233846.1276,Income,All $50k to $75k,All,100.00%
-$50k to $75k,24050,35374.38446,dtransit,Drive to transit $50k to $75k,Drive to transit,10.10%
-$50k to $75k,178655,198471.7432,transit,Walk to transit $50k to $75k,Walk to transit,89.90%
-$75k to $100K,128145,168900.8413,Income,All $75k to $100K,All,100.00%
-$75k to $100K,20120,31652.43143,dtransit,Drive to transit $75k to $100K,Drive to transit,10.10%
-$75k to $100K,108025,137248.4099,transit,Walk to transit $75k to $100K,Walk to transit,89.90%
-More than $100k,286015,299989.9734,Income,All More than $100k,All,100.00%
-More than $100k,53430,68141.11949,dtransit,Drive to transit More than $100k,Drive to transit,10.10%
-More than $100k,232585,231848.8539,transit,Walk to transit More than $100k,Walk to transit,89.90%
+Index,Model 01,Survey 01,Category,Description,Title
+Less than 2.5 Mile,356720,154387.3262,all,All Less than 2.5 Mile,All
+2.5-5 Mile,370550,297000.4657,all,All 2.5-5 Mile,All
+5-10 Mile,504955,383821.9804,all,All 5-10 Mile,All
+10-15 Mile,240900,219303.4578,all,All 10-15 Mile,All
+15-20 Mile,71325,114899.8444,all,All 15-20 Mile,All
+20-25 Mile,26780,81746.36539,all,All 20-25 Mile,All
+25-30 Mile,20450,72818.25991,all,All 25-30 Mile,All
+30 Miles or More,34660,166879.1335,all,All 30 Miles or More,All
+Less than 2.5 Mile,17500,1492.843889,dtransit,Drive to transit Less than 2.5 Mile,Drive to transit
+2.5-5 Mile,23510,2580.631333,dtransit,Drive to transit 2.5-5 Mile,Drive to transit
+5-10 Mile,36980,14304.66187,dtransit,Drive to transit 5-10 Mile,Drive to transit
+10-15 Mile,29300,20377.18814,dtransit,Drive to transit 10-15 Mile,Drive to transit
+15-20 Mile,13960,22740.30033,dtransit,Drive to transit 15-20 Mile,Drive to transit
+20-25 Mile,9530,16052.21108,dtransit,Drive to transit 20-25 Mile,Drive to transit
+25-30 Mile,10130,27576.88333,dtransit,Drive to transit 25-30 Mile,Drive to transit
+30 Miles or More,23300,69740.63355,dtransit,Drive to transit 30 Miles or More,Drive to transit
+Less than 2.5 Mile,339220,152894.4823,transit,Walk to transit Less than 2.5 Mile,Walk to transit
+2.5-5 Mile,347040,294419.8343,transit,Walk to transit 2.5-5 Mile,Walk to transit
+5-10 Mile,467975,369517.3185,transit,Walk to transit 5-10 Mile,Walk to transit
+10-15 Mile,211600,198926.2697,transit,Walk to transit 10-15 Mile,Walk to transit
+15-20 Mile,57365,92159.5441,transit,Walk to transit 15-20 Mile,Walk to transit
+20-25 Mile,17250,65694.15431,transit,Walk to transit 20-25 Mile,Walk to transit
+25-30 Mile,10320,45241.37659,transit,Walk to transit 25-30 Mile,Walk to transit
+30 Miles or More,11360,97138.49999,transit,Walk to transit 30 Miles or More,Walk to transit

@@ -1,25 +1,25 @@
-Index,Model 01,Survey 01,Category,Description,Title,Portion
-Full-time worker,226670,211523.08,H,,,16.3%
-Part-time worker,125275,124222.05,H,,,16.3%
-University student,55850,41477.34,H,,,16.3%
-Non-working adult,583620,263097.07,H,,,16.3%
-Non-working senior,251985,227963.44,H,,,16.3%
-Driving age student,34565,22577.2,H,,,16.3%
-Non-driving student,145880,114187.86,H,,,16.3%
-Pre-school,240445,225088.53,H,,,16.3%
-Full-time worker,2764140,3249366.7,M,,,49.3%
-Part-time worker,523150,522800.7,M,,,49.3%
-University student,267945,222604.5,M,,,49.3%
-Non-working adult,0,0,M,,,49.3%
-Non-working senior,0,0,M,,,49.3%
-Driving age student,289680,233693,M,,,49.3%
-Non-driving student,1016565,1054944.4,M,,,49.3%
-Pre-school,189120,241519.1,M,,,49.3%
-Full-time worker,462715,521295.77,N,,,34.4%
-Part-time worker,332650,250566.69,N,,,34.4%
-University student,159585,123828.77,N,,,34.4%
-Non-working adult,1207275,842290.82,N,,,34.4%
-Non-working senior,578265,553790.14,N,,,34.4%
-Driving age student,73000,54764.05,N,,,34.4%
-Non-driving student,327510,321082.52,N,,,34.4%
-Pre-school,384370,417365.23,N,,,34.4%
+Index,Model 01,Survey 01,Category,Description,Title
+Full-time worker,226670,211523.08,H,,
+Part-time worker,125275,124222.05,H,,
+University student,55850,41477.34,H,,
+Non-working adult,583620,263097.07,H,,
+Non-working senior,251985,227963.44,H,,
+Driving age student,34565,22577.2,H,,
+Non-driving student,145880,114187.86,H,,
+Pre-school,240445,225088.53,H,,
+Full-time worker,2764140,3249366.7,M,,
+Part-time worker,523150,522800.7,M,,
+University student,267945,222604.5,M,,
+Non-working adult,0,0,M,,
+Non-working senior,0,0,M,,
+Driving age student,289680,233693,M,,
+Non-driving student,1016565,1054944.4,M,,
+Pre-school,189120,241519.1,M,,
+Full-time worker,462715,521295.77,N,,
+Part-time worker,332650,250566.69,N,,
+University student,159585,123828.77,N,,
+Non-working adult,1207275,842290.82,N,,
+Non-working senior,578265,553790.14,N,,
+Driving age student,73000,54764.05,N,,
+Non-driving student,327510,321082.52,N,,
+Pre-school,384370,417365.23,N,,
