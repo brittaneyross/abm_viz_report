@@ -115,7 +115,7 @@ function make_multi_line_dd(csv, divID, catID, legendID) {
     }) // list of group names
     var color = d3.scaleOrdinal()
       .domain(res)
-      .range(["#D8BA37","#2a4d59", "#ff8c00","#519c36"])
+      .range(["#0E84AC","#2a4d59", "#6fdb48","#519c36"])
 
 
     //Create legend
@@ -132,7 +132,7 @@ function make_multi_line_dd(csv, divID, catID, legendID) {
       .style("font-family", "sans-serif")
       .attr("alignment-baseline", "middle")
 
-    ml_legend.append("line").attr("x1", 10).attr("y1", 40).attr("x2", 30).attr("y2", 40).style("stroke", "#ff8c00").style("stroke-width", 5).style("stroke-dasharray", "5,5")
+    ml_legend.append("line").attr("x1", 10).attr("y1", 40).attr("x2", 30).attr("y2", 40).style("stroke", "#6fdb48").style("stroke-width", 5).style("stroke-dasharray", "5,5")
     ml_legend.append("text")
       .attr("x", 35)
       .attr("y", 40)
@@ -151,7 +151,7 @@ function make_multi_line_dd(csv, divID, catID, legendID) {
       .attr("alignment-baseline", "middle")
 
 
-    ml_legend.append("line").attr("x1", 10).attr("y1", 80).attr("x2", 30).attr("y2", 80).style("stroke", "#D8BA37").style("stroke-width", 5)
+    ml_legend.append("line").attr("x1", 10).attr("y1", 80).attr("x2", 30).attr("y2", 80).style("stroke", "#0E84AC").style("stroke-width", 5)
     ml_legend.append("text")
       .attr("x", 35)
       .attr("y", 80)
@@ -240,7 +240,7 @@ function make_multi_line_dd(csv, divID, catID, legendID) {
       }) // list of group names
       var color = d3.scaleOrdinal()
         .domain(res)
-        .range(["#D8BA37","#2a4d59", "#ff8c00","#519c36"])
+        .range(["#0E84AC","#2a4d59", "#6fdb48","#519c36"])
 
       // Draw the line
       var new_layer = svg.selectAll(".line")

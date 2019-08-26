@@ -1,100 +1,91 @@
-Index,Model 01,Survey 01,Category,Title,Portion,PortionS
-Drive alone free,13271835,13373886.92,All,All,100.0%,100.0%
-Drive alone free,7586910,7717476.286,Full-time worker,Full-time worker,44.0%,45.4%
-Walk,3880330,2780561.287,All,All,100.0%,100.0%
-Shared ride 3+ free,3074575,2608534.892,All,All,100.0%,100.0%
-Shared ride 2 free,2674540,3802078.973,All,All,100.0%,100.0%
-Drive alone free,1840760,1945980.201,Non-worker,Non-worker,13.3%,13.8%
-Drive alone free,1645480,1524442.243,Part-time worker,Part-time worker,10.0%,9.4%
-Drive alone free,1499625,1343515.81,Retired,Retired,7.9%,7.3%
-Transit,1482385,1420150.418,All,All,100.0%,100.0%
-Walk,1134190,885631.2348,Full-time worker,Full-time worker,44.0%,45.4%
-Walk,965425,638025.8385,Student of non-driving age,Student of non-driving age,13.1%,11.9%
-Transit,965280,794475.3406,Full-time worker,Full-time worker,44.0%,45.4%
-Shared ride 3+ free,929840,874888.1419,Student of non-driving age,Student of non-driving age,13.1%,11.9%
-School bus,878250,747652.4905,All,All,100.0%,100.0%
-Shared ride 2 free,826335,1238486.815,Full-time worker,Full-time worker,44.0%,45.4%
-School bus,718260,605154.6332,Student of non-driving age,Student of non-driving age,13.1%,11.9%
-Shared ride 2 free,648380,767951.2675,Student of non-driving age,Student of non-driving age,13.1%,11.9%
-Shared ride 3+ free,611295,355150.1735,Non-worker,Non-worker,13.3%,13.8%
-Shared ride 3+ free,564530,449798.187,Full-time worker,Full-time worker,44.0%,45.4%
-Walk,563625,473230.1348,Non-worker,Non-worker,13.3%,13.8%
-Shared ride 3+ free,551040,581519.2534,Child too young for school,Child too young for school,4.6%,4.6%
-Drive alone free,455475,551444.5896,University student,University student,3.6%,4.1%
-Walk,332450,185639.6604,Part-time worker,Part-time worker,10.0%,9.4%
-Shared ride 2 free,331405,361277.8919,Child too young for school,Child too young for school,4.6%,4.6%
-Bike,315020,253806.2036,All,All,100.0%,100.0%
-Shared ride 2 free,307645,527127.2444,Non-worker,Non-worker,13.3%,13.8%
-Walk,266165,170342.7207,Child too young for school,Child too young for school,4.6%,4.6%
-Drive alone pay,256355,389588.7272,All,All,100.0%,100.0%
-Walk,255190,168806.433,Retired,Retired,7.9%,7.3%
-Drive alone free,243585,291027.7948,Student of driving age,Student of driving age,3.3%,3.5%
-Transit,202365,144673.4326,Part-time worker,Part-time worker,10.0%,9.4%
-Shared ride 2 free,192990,318733.055,Part-time worker,Part-time worker,10.0%,9.4%
-Walk,191030,120166.0567,Student of driving age,Student of driving age,3.3%,3.5%
-Drive alone pay,180390,332456.0315,Full-time worker,Full-time worker,44.0%,45.4%
-Walk,172255,138719.208,University student,University student,3.6%,4.1%
-Shared ride 3+ free,162770,161164.3014,Part-time worker,Part-time worker,10.0%,9.4%
-Shared ride 2 free,139415,210020.7735,Student of driving age,Student of driving age,3.3%,3.5%
-Shared ride 2 free,132050,227791.8211,Retired,Retired,7.9%,7.3%
-Bike,126300,95009.70793,Full-time worker,Full-time worker,44.0%,45.4%
-Shared ride 3+ free,125270,28681.93572,Retired,Retired,7.9%,7.3%
-School bus,124500,95395.85392,Student of driving age,Student of driving age,3.3%,3.5%
-Shared ride 2 free,96320,150690.1043,University student,University student,3.6%,4.1%
-Taxi,92530,60047.86298,All,All,100.0%,100.0%
-Transit,83660,112257.9503,University student,University student,3.6%,4.1%
-Transit,79745,153109.3618,Non-worker,Non-worker,13.3%,13.8%
-Shared ride 3+ free,78640,100286.2255,Student of driving age,Student of driving age,3.3%,3.5%
-Transit,76505,76713.13235,Student of non-driving age,Student of non-driving age,13.1%,11.9%
-Transit,59640,72687.98404,Student of driving age,Student of driving age,3.3%,3.5%
-Bike,54895,66286.3666,Student of non-driving age,Student of non-driving age,13.1%,11.9%
-Shared ride 3+ free,51190,57046.67408,University student,University student,3.6%,4.1%
-Taxi,36760,32379.97521,Full-time worker,Full-time worker,44.0%,45.4%
-School bus,35490,36162.56639,Child too young for school,Child too young for school,4.6%,4.6%
-Bike,34405,26230.85318,Part-time worker,Part-time worker,10.0%,9.4%
-Taxi,34000,5966.57591,University student,University student,3.6%,4.1%
-Shared ride 3+ pay,33070,6817.462447,All,All,100.0%,100.0%
-Bike,32155,21145.34937,University student,University student,3.6%,4.1%
-Shared ride 2 pay,31970,29145.81541,All,All,100.0%,100.0%
-Bike,28615,20288.39791,Non-worker,Non-worker,13.3%,13.8%
-Drive alone pay,22755,22452.84252,Part-time worker,Part-time worker,10.0%,9.4%
-Drive alone pay,20840,15758.58302,Non-worker,Non-worker,13.3%,13.8%
-Drive alone pay,19280,7704.84716,Retired,Retired,7.9%,7.3%
-Bike,14585,4978.354652,Child too young for school,Child too young for school,4.6%,4.6%
-Bike,13945,9395.145395,Retired,Retired,7.9%,7.3%
-Shared ride 2 pay,11235,20874.96088,Full-time worker,Full-time worker,44.0%,45.4%
-Bike,10120,10472.02858,Student of driving age,Student of driving age,3.3%,3.5%
-Drive alone pay,9795,10526.96233,University student,University student,3.6%,4.1%
-Transit,8405,57294.63591,Retired,Retired,7.9%,7.3%
-Shared ride 3+ pay,8215,2721.384563,Full-time worker,Full-time worker,44.0%,45.4%
-Taxi,7060,2386.339932,Part-time worker,Part-time worker,10.0%,9.4%
-Transit,6785,8938.580296,Child too young for school,Child too young for school,4.6%,4.6%
-Taxi,6195,10612.36534,Non-worker,Non-worker,13.3%,13.8%
-Shared ride 2 pay,5920,737.0899781,Student of non-driving age,Student of non-driving age,13.1%,11.9%
-Shared ride 3+ pay,5260,1254.984775,Non-worker,Non-worker,13.3%,13.8%
-Taxi,4245,5710.069822,Retired,Retired,7.9%,7.3%
-Shared ride 2 pay,3440,2154.531687,Non-worker,Non-worker,13.3%,13.8%
-Drive alone pay,3295,689.4606474,Student of driving age,Student of driving age,3.3%,3.5%
-Shared ride 2 pay,2780,1359.303241,University student,University student,3.6%,4.1%
-Taxi,2105,982.7395533,Student of non-driving age,Student of non-driving age,13.1%,11.9%
-Shared ride 2 pay,1975,1706.197499,Retired,Retired,7.9%,7.3%
-Shared ride 2 pay,1615,2020.045045,Part-time worker,Part-time worker,10.0%,9.4%
-Shared ride 2 pay,1600,293.6870818,Student of driving age,Student of driving age,3.3%,3.5%
-Taxi,1515,624.5517692,Child too young for school,Child too young for school,4.6%,4.6%
-Shared ride 3+ pay,1490,845.7524136,Part-time worker,Part-time worker,10.0%,9.4%
-Shared ride 3+ pay,1480,6.72572,Retired,Retired,7.9%,7.3%
-Shared ride 3+ pay,1355,1988.614975,University student,University student,3.6%,4.1%
-Taxi,650,1385.245438,Student of driving age,Student of driving age,3.3%,3.5%
-Drive alone free,0,0,Child too young for school,Child too young for school,4.6%,4.6%
-Drive alone pay,0,0,Child too young for school,Child too young for school,4.6%,4.6%
-Shared ride 2 pay,0,0,Child too young for school,Child too young for school,4.6%,4.6%
-Shared ride 3+ pay,0,0,Child too young for school,Child too young for school,4.6%,4.6%
-School bus,0,0,Full-time worker,Full-time worker,44.0%,45.4%
-School bus,0,0,Non-worker,Non-worker,13.3%,13.8%
-School bus,0,0,Part-time worker,Part-time worker,10.0%,9.4%
-School bus,0,0,Retired,Retired,7.9%,7.3%
-Shared ride 3+ pay,0,0,Student of driving age,Student of driving age,3.3%,3.5%
-Drive alone free,0,0,Student of non-driving age,Student of non-driving age,13.1%,11.9%
-Drive alone pay,0,0,Student of non-driving age,Student of non-driving age,13.1%,11.9%
-Shared ride 3+ pay,0,0,Student of non-driving age,Student of non-driving age,13.1%,11.9%
-School bus,0,0,University student,University student,3.6%,4.1%
+Index,Model 01,Survey 01,Category,Title
+Drive alone free,13271835,13373886.92,All,All
+Drive alone free,7586910,7717476.286,Full-time worker,Full-time worker
+Walk,3880330,2780561.287,All,All
+Shared ride 3+ free,3074575,2608534.892,All,All
+Shared ride 2 free,2674540,3802078.973,All,All
+Drive alone free,1840760,1945980.201,Non-worker,Non-worker
+Drive alone free,1645480,1524442.243,Part-time worker,Part-time worker
+Drive alone free,1499625,1343515.81,Retired,Retired
+Walk,1134190,885631.2348,Full-time worker,Full-time worker
+Walk,965425,638025.8385,Student of non-driving age,Student of non-driving age
+Shared ride 3+ free,929840,874888.1419,Student of non-driving age,Student of non-driving age
+School bus,878250,747652.4905,All,All
+Shared ride 2 free,826335,1238486.815,Full-time worker,Full-time worker
+School bus,718260,605154.6332,Student of non-driving age,Student of non-driving age
+Shared ride 2 free,648380,767951.2675,Student of non-driving age,Student of non-driving age
+Shared ride 3+ free,611295,355150.1735,Non-worker,Non-worker
+Shared ride 3+ free,564530,449798.187,Full-time worker,Full-time worker
+Walk,563625,473230.1348,Non-worker,Non-worker
+Shared ride 3+ free,551040,581519.2534,Child too young for school,Child too young for school
+Drive alone free,455475,551444.5896,University student,University student
+Walk,332450,185639.6604,Part-time worker,Part-time worker
+Shared ride 2 free,331405,361277.8919,Child too young for school,Child too young for school
+Bike,315020,253806.2036,All,All
+Shared ride 2 free,307645,527127.2444,Non-worker,Non-worker
+Walk,266165,170342.7207,Child too young for school,Child too young for school
+Drive alone pay,256355,389588.7272,All,All
+Walk,255190,168806.433,Retired,Retired
+Drive alone free,243585,291027.7948,Student of driving age,Student of driving age
+Shared ride 2 free,192990,318733.055,Part-time worker,Part-time worker
+Walk,191030,120166.0567,Student of driving age,Student of driving age
+Drive alone pay,180390,332456.0315,Full-time worker,Full-time worker
+Walk,172255,138719.208,University student,University student
+Shared ride 3+ free,162770,161164.3014,Part-time worker,Part-time worker
+Shared ride 2 free,139415,210020.7735,Student of driving age,Student of driving age
+Shared ride 2 free,132050,227791.8211,Retired,Retired
+Bike,126300,95009.70793,Full-time worker,Full-time worker
+Shared ride 3+ free,125270,28681.93572,Retired,Retired
+School bus,124500,95395.85392,Student of driving age,Student of driving age
+Shared ride 2 free,96320,150690.1043,University student,University student
+Taxi,92530,60047.86298,All,All
+Shared ride 3+ free,78640,100286.2255,Student of driving age,Student of driving age
+Bike,54895,66286.3666,Student of non-driving age,Student of non-driving age
+Shared ride 3+ free,51190,57046.67408,University student,University student
+Taxi,36760,32379.97521,Full-time worker,Full-time worker
+School bus,35490,36162.56639,Child too young for school,Child too young for school
+Bike,34405,26230.85318,Part-time worker,Part-time worker
+Taxi,34000,5966.57591,University student,University student
+Shared ride 3+ pay,33070,6817.462447,All,All
+Bike,32155,21145.34937,University student,University student
+Shared ride 2 pay,31970,29145.81541,All,All
+Bike,28615,20288.39791,Non-worker,Non-worker
+Drive alone pay,22755,22452.84252,Part-time worker,Part-time worker
+Drive alone pay,20840,15758.58302,Non-worker,Non-worker
+Drive alone pay,19280,7704.84716,Retired,Retired
+Bike,14585,4978.354652,Child too young for school,Child too young for school
+Bike,13945,9395.145395,Retired,Retired
+Shared ride 2 pay,11235,20874.96088,Full-time worker,Full-time worker
+Bike,10120,10472.02858,Student of driving age,Student of driving age
+Drive alone pay,9795,10526.96233,University student,University student
+Shared ride 3+ pay,8215,2721.384563,Full-time worker,Full-time worker
+Taxi,7060,2386.339932,Part-time worker,Part-time worker
+Taxi,6195,10612.36534,Non-worker,Non-worker
+Shared ride 2 pay,5920,737.0899781,Student of non-driving age,Student of non-driving age
+Shared ride 3+ pay,5260,1254.984775,Non-worker,Non-worker
+Taxi,4245,5710.069822,Retired,Retired
+Shared ride 2 pay,3440,2154.531687,Non-worker,Non-worker
+Drive alone pay,3295,689.4606474,Student of driving age,Student of driving age
+Shared ride 2 pay,2780,1359.303241,University student,University student
+Taxi,2105,982.7395533,Student of non-driving age,Student of non-driving age
+Shared ride 2 pay,1975,1706.197499,Retired,Retired
+Shared ride 2 pay,1615,2020.045045,Part-time worker,Part-time worker
+Shared ride 2 pay,1600,293.6870818,Student of driving age,Student of driving age
+Taxi,1515,624.5517692,Child too young for school,Child too young for school
+Shared ride 3+ pay,1490,845.7524136,Part-time worker,Part-time worker
+Shared ride 3+ pay,1480,6.72572,Retired,Retired
+Shared ride 3+ pay,1355,1988.614975,University student,University student
+Taxi,650,1385.245438,Student of driving age,Student of driving age
+Drive alone free,0,0,Child too young for school,Child too young for school
+Drive alone pay,0,0,Child too young for school,Child too young for school
+Shared ride 2 pay,0,0,Child too young for school,Child too young for school
+Shared ride 3+ pay,0,0,Child too young for school,Child too young for school
+School bus,0,0,Full-time worker,Full-time worker
+School bus,0,0,Non-worker,Non-worker
+School bus,0,0,Part-time worker,Part-time worker
+School bus,0,0,Retired,Retired
+Shared ride 3+ pay,0,0,Student of driving age,Student of driving age
+Shared ride 3+ pay,0,0,Student of non-driving age,Student of non-driving age
+Drive alone free,0,0,Student of non-driving age,Student of non-driving age
+Drive alone pay,0,0,Student of non-driving age,Student of non-driving age
+School bus,0,0,University student,University student

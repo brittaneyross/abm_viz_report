@@ -3,10 +3,6 @@
     height: 500px;
 }
 
-.leaflet-top.leaflet-right {
-    z-index: 400 !important;
-}
-
 .btn-info {
     background-color: #1C4E80 !important;
     border-color: #1C4E80 !important;

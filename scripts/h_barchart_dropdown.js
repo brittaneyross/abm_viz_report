@@ -1,4 +1,4 @@
-function makeGroupHBar_dd(csv_file, chartID, catID, nogroups, dataDescription, dtitle, portionID) {
+function makeGroupHBar_dd(csv_file, chartID, catID, nogroups, dataDescription, dtitle) {
 
   var barChartConfig = {
     mainDiv: "#chart",
@@ -50,19 +50,10 @@ function makeGroupHBar_dd(csv_file, chartID, catID, nogroups, dataDescription, d
 
   g.append("g")
     .attr("class", "axis axis--x")
-    .attr("transform", "translate(25," + height + ")");
+    .attr("transform", "translate(0," + height + ")");
 
   g.append("g")
-    .attr("class", "axis axis--y")
-    .attr("transform", "translate(25,0)");
-
-  g.append("text")
-    .style("font", "20px sans-serif")
-    .attr("transform",
-          "translate(-85," +
-                          (height/2) + ") rotate(-90)")
-    .style("text-anchor", "middle")
-    .text("Trip Origin");
+    .attr("class", "axis axis--y");
 
   var z = d3.scaleOrdinal()
     .range(['#0E84AC',	'#548E3F','#E9A7A7',	'#FBFBFB',	'#E57272',	'#D8BA37',	'#84C87E',	'#5F7B88',	'#9675B4',	'#5F5121']);
@@ -153,14 +144,10 @@ function makeGroupHBar_dd(csv_file, chartID, catID, nogroups, dataDescription, d
           d.totalSlice = test;
           divText = "Table Description: " + d.Description;
           divTitle = d.Title;
-          portion = d.Portion;
-
           return d;
         })
         d3.select("#" + dataDescription).text(divText);
         d3.select("#" + dtitle).text(catText);
-        d3.select("#" + portionID).text(portion);
-
         // ======== Domain, Axis & Sort ========
 
         //console.log(newdata);
@@ -213,7 +200,7 @@ function makeGroupHBar_dd(csv_file, chartID, catID, nogroups, dataDescription, d
 
         g.selectAll(".layer").transition().duration(durations)
           .attr("transform", function(d, i) {
-            return "translate(25," + y0(d["Index"]) + ")";
+            return "translate(0," + y0(d["Index"]) + ")";
           });
 
         let bars = g.selectAll(".layer").selectAll("rect")
@@ -261,9 +248,9 @@ function makeGroupHBar_dd(csv_file, chartID, catID, nogroups, dataDescription, d
 
             line = g.append('line')
               .attr('id', 'limit')
-              .attr('x1', xvalue + 25)
+              .attr('x1', xvalue)
               .attr('y1', 0)
-              .attr('x2', xvalue + 25)
+              .attr('x2', xvalue)
               .attr('y2', height - y1(d.key))
 
 
