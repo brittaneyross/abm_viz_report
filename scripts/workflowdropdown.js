@@ -12,14 +12,14 @@ function updateworkdata(origin, destination) {
     $("#wflowinfo2").empty()
 
     d3.select("#wflowinfo").html(
-        "</p></b><p style='color:rgb(28, 78, 128); font-size: 30px; margin-bottom: 0px;'>" + d3.formatPrefix(".2s",1e6)(modeled[0].count) +
+        "</p></b><p style='color:rgb(28, 78, 128); font-size: 30px; margin-bottom: 0px;'>" + d3.formatPrefix(".2s",1e5)(modeled[0].count) +
         "</p><p style='color:grey; font-size: 12px;'> modeled" 
         )
         .style("left", 200 + "px")
         .style("top",  100 + "px");    
 
     d3.select("#wflowinfo2").html(
-        "</p></b><p style='color:rgb(166, 186, 206); font-size: 30px; margin-bottom: 0px;'>" + d3.formatPrefix(".2s",1e6)(observed[0].count) +
+        "</p></b><p style='color:rgb(166, 186, 206); font-size: 30px; margin-bottom: 0px;'>" + d3.formatPrefix(".2s",1e5)(observed[0].count) +
         "</p><p style='color:grey; font-size: 12px;'> observed" 
         )
         .style("left", 200 + "px")

@@ -5,36 +5,36 @@ Chicago,Local,Mod,3931955.531,CMAP Region,CMAP Region,0
 Chicago,Arterial,obs,14670101.37,CMAP Region,CMAP Region,1
 Chicago,Interstate,obs,11093800,CMAP Region,CMAP Region,1
 Chicago,Local,obs,3364509.59,CMAP Region,CMAP Region,1
-DuPage,Arterial,Mod,12971500.81,CMAP Region,CMAP Region,2
-DuPage,Interstate,Mod,9320160.883,CMAP Region,CMAP Region,2
-DuPage,Local,Mod,3434687.249,CMAP Region,CMAP Region,2
-DuPage,Arterial,obs,12370419.18,CMAP Region,CMAP Region,3
-DuPage,Interstate,obs,7736630.14,CMAP Region,CMAP Region,3
-DuPage,Local,obs,3134654.8,CMAP Region,CMAP Region,3
-Kane,Arterial,Mod,7973911.308,CMAP Region,CMAP Region,4
-Kane,Interstate,Mod,2340660.475,CMAP Region,CMAP Region,4
-Kane,Local,Mod,1764628.831,CMAP Region,CMAP Region,4
-Kane,Arterial,obs,6407789.04,CMAP Region,CMAP Region,5
-Kane,Interstate,obs,2150019.18,CMAP Region,CMAP Region,5
-Kane,Local,obs,2009331.51,CMAP Region,CMAP Region,5
-Lake,Arterial,Mod,9856722.144,CMAP Region,CMAP Region,6
-Lake,Interstate,Mod,5605247.869,CMAP Region,CMAP Region,6
-Lake,Local,Mod,2612208.362,CMAP Region,CMAP Region,6
-Lake,Arterial,obs,10081049.32,CMAP Region,CMAP Region,7
-Lake,Interstate,obs,3055394.52,CMAP Region,CMAP Region,7
-Lake,Local,obs,2483471.23,CMAP Region,CMAP Region,7
-McHenry,Arterial,Mod,5158396.866,CMAP Region,CMAP Region,8
-McHenry,Interstate,Mod,463613.6146,CMAP Region,CMAP Region,8
-McHenry,Local,Mod,1264988.435,CMAP Region,CMAP Region,8
-McHenry,Arterial,obs,4402794.52,CMAP Region,CMAP Region,9
-McHenry,Interstate,obs,365789.04,CMAP Region,CMAP Region,9
-McHenry,Local,obs,1611145.21,CMAP Region,CMAP Region,9
-Suburban Cook,Arterial,Mod,27650578.07,CMAP Region,CMAP Region,10
-Suburban Cook,Interstate,Mod,19061730.89,CMAP Region,CMAP Region,10
-Suburban Cook,Local,Mod,6764904.134,CMAP Region,CMAP Region,10
-Suburban Cook,Arterial,obs,28112046.58,CMAP Region,CMAP Region,11
-Suburban Cook,Interstate,obs,21267268.49,CMAP Region,CMAP Region,11
-Suburban Cook,Local,obs,7129490.41,CMAP Region,CMAP Region,11
+Suburban Cook,Arterial,Mod,27650578.07,CMAP Region,CMAP Region,2
+Suburban Cook,Interstate,Mod,19061730.89,CMAP Region,CMAP Region,2
+Suburban Cook,Local,Mod,6764904.134,CMAP Region,CMAP Region,2
+Suburban Cook,Arterial,obs,28112046.58,CMAP Region,CMAP Region,3
+Suburban Cook,Interstate,obs,21267268.49,CMAP Region,CMAP Region,3
+Suburban Cook,Local,obs,7129490.41,CMAP Region,CMAP Region,3
+DuPage,Arterial,Mod,12971500.81,CMAP Region,CMAP Region,4
+DuPage,Interstate,Mod,9320160.883,CMAP Region,CMAP Region,4
+DuPage,Local,Mod,3434687.249,CMAP Region,CMAP Region,4
+DuPage,Arterial,obs,12370419.18,CMAP Region,CMAP Region,5
+DuPage,Interstate,obs,7736630.14,CMAP Region,CMAP Region,5
+DuPage,Local,obs,3134654.8,CMAP Region,CMAP Region,5
+Kane,Arterial,Mod,7973911.308,CMAP Region,CMAP Region,6
+Kane,Interstate,Mod,2340660.475,CMAP Region,CMAP Region,6
+Kane,Local,Mod,1764628.831,CMAP Region,CMAP Region,6
+Kane,Arterial,obs,6407789.04,CMAP Region,CMAP Region,7
+Kane,Interstate,obs,2150019.18,CMAP Region,CMAP Region,7
+Kane,Local,obs,2009331.51,CMAP Region,CMAP Region,7
+Lake,Arterial,Mod,9856722.144,CMAP Region,CMAP Region,8
+Lake,Interstate,Mod,5605247.869,CMAP Region,CMAP Region,8
+Lake,Local,Mod,2612208.362,CMAP Region,CMAP Region,8
+Lake,Arterial,obs,10081049.32,CMAP Region,CMAP Region,9
+Lake,Interstate,obs,3055394.52,CMAP Region,CMAP Region,9
+Lake,Local,obs,2483471.23,CMAP Region,CMAP Region,9
+McHenry,Arterial,Mod,5158396.866,CMAP Region,CMAP Region,10
+McHenry,Interstate,Mod,463613.6146,CMAP Region,CMAP Region,10
+McHenry,Local,Mod,1264988.435,CMAP Region,CMAP Region,10
+McHenry,Arterial,obs,4402794.52,CMAP Region,CMAP Region,11
+McHenry,Interstate,obs,365789.04,CMAP Region,CMAP Region,11
+McHenry,Local,obs,1611145.21,CMAP Region,CMAP Region,11
 Will,Arterial,Mod,8516426.45,CMAP Region,CMAP Region,12
 Will,Interstate,Mod,6510539.621,CMAP Region,CMAP Region,12
 Will,Local,Mod,2810698.426,CMAP Region,CMAP Region,12
