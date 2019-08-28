@@ -227,9 +227,35 @@ function makeGroupHBar(csv_file,chartID, nogroups,dataDescription,dtitle,height,
         selectedline = d.lines.replace(/\s/g, '').replace(/\//g,'-').replace(/&/g,'').replace(/\(|\)/g, "")
         // this highlights the line on the map!
         metra1.eachLayer(function(layer) {
+          if (selectedline == "BNSF"){
+            linecolormetra = "#32CD32"
+          } else if (selectedline == "UPNorth"){
+            linecolormetra = "#006400"
+          } else if (selectedline == "UP-W"){
+            linecolormetra = "#DB7093"
+          } else if (selectedline == "UP-NW"){
+            linecolormetra = "#cccc00"
+          } else if (selectedline == "ME"){
+            linecolormetra = "#FF4500"
+          } else if (selectedline == "RI"){
+            linecolormetra = "#FF0000"
+          } else if (selectedline == "MD-W"){
+            linecolormetra = "#ffc04c"
+          } else if (selectedline == "MD-N"){
+            linecolormetra = "#FF8C00"
+          } else if (selectedline == "SWS"){
+            linecolormetra = "#0000FF"
+          } else if (selectedline == "HC"){
+            linecolormetra = "#570632"
+          } else if (selectedline == "NCS"){
+            linecolormetra = "#5d198e"
+          } else {
+            linecolormetra = "#0052a7"
+          }
+
           if(layer.LINE.includes(selectedline)){
             layer.setStyle({
-              color:"#0052a7",
+              color: linecolormetra,
               weight: 3
           })
           }})

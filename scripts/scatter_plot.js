@@ -57,6 +57,7 @@ function makeScatter(csv_file, chart_id, modelvalue,obsvalue,category_value,rsqu
       d3.select("#"+rsquared).text(parseFloat(lr.r2).toPrecision(3));
       var max = d3.max(data, function (d) { return d[obsvalue]; });
       var myLine = svg.append("line")
+                  .attr("id", "line")
                   .attr("x1", x(0))
                   .attr("y1", y(lr.intercept))
                   .attr("x2", x(max))
@@ -91,20 +92,146 @@ function makeScatter(csv_file, chart_id, modelvalue,obsvalue,category_value,rsqu
       .style("text-anchor", "middle")
       .text("Model");
 
-	    svg.selectAll(".point")
-	        .data(data)
-	      .enter().append("circle")
-	        .attr("class", "point")
-	        .attr("r", 3)
-	        .attr("cy", function(d){ return y(d[modelvalue])})
-	        .attr("cx", function(d){ return x(d[obsvalue])})
+      if (chart_id == '#scatter_vmt'){
+        svg.selectAll(".point")
+        .data(data)
+        .enter().append("circle")
+        .attr("class", "point")
+        .attr("r", 2.5)
+        .attr("cy", function(d){ return y(d[modelvalue])})
+        .attr("cx", function(d){ return x(d[obsvalue])})
+        .style("fill",function(d){
+          return color(d[category_value])
+        })
+        .style("opacity", .2)
+      } else{
+        svg.selectAll(".point")
+        .data(data)
+        .enter().append("circle")
+        .attr("class", "point")
+        .attr("r", 3)
+        .attr("cy", function(d){ return y(d[modelvalue])})
+        .attr("cx", function(d){ return x(d[obsvalue])})
+        .style("fill",function(d){
+          return color(d[category_value])
+        })
+        .style("stroke","#f0f0f0")
+        .style("stroke-width", .25) ;
+      }
+
+      if (chart_id == '#scatter_vmt'){
+        var legend = d3.select("#scatterLegend").append("svg")
+        .attr("height", 75)
+        .attr("width", 250)
+
+        var keys = ["Arterial/Collector", "Interstate"]
+
+        var color = d3.scaleOrdinal()
+          .domain(keys)
+          .range(["#0E84AC", "#548E3F"])
+
+        legend.selectAll("mydots")
+          .data(keys)
+          .enter()
+          .append("circle")
+            .attr("cx", 10)
+            .attr("cy", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+            .attr("r", 7)
+            .style("fill", function(d) { return color(d); })
+
+        // Add one dot in the legend for each name.
+        legend.selectAll("mylabels")
+          .data(keys)
+          .enter()
+          .append("text")
+            .attr("x", 20)
+            .attr("y", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+            .text(function(d){
+              return d})
+            .attr("text-anchor", "left")
+            .style("alignment-baseline", "middle")
+            .style("fill","black")
+          }
+        function update(selectedGroup){
+          if (selectedGroup == "All"){
+            var dataFilter = data
+          } else{
+            var dataFilter = data.filter(function(d){return d.FacilityType == selectedGroup})
+          }
+          //Remove all points
+          svg.selectAll(".point").remove()
+          d3.select("#line").remove();
+
+          var x = d3.scaleLinear()
+           .domain([0,d3.max(dataFilter, function(d){
+             return d[obsvalue];
+            })])
+           .range([padding,width - padding*2]);
+
+          var y = d3.scaleLinear()
+          .domain([d3.min(dataFilter, function(d){
+            return(d[modelvalue]);
+          }),
+          d3.max(dataFilter, function(d){
+            return d[modelvalue];
+           })]) //y range is reversed because svg
+           .range([height-padding, padding]);
+
+          var xAxis = d3.axisBottom()
+              .scale(x)
+              .tickFormat(d3.format(".2s"));
+
+          var yAxis = d3.axisLeft()
+              .scale(y)
+              .tickFormat(d3.format(".2s"));
+          svg.select(".x")
+          .transition()
+          .call(xAxis);
+          svg.select(".y")
+          .transition()
+          .call(yAxis);
+          //Add new points
+          svg.selectAll(".point")
+          .data(dataFilter)
+          .enter().append("circle")
+          .attr("class", "point")
+          .attr("r", 2.5)
+          .attr("cy", function(d){ return y(d[modelvalue])})
+          .attr("cx", function(d){ return x(d[obsvalue])})
           .style("fill",function(d){
             return color(d[category_value])
           })
-          .style("stroke","#f0f0f0")
-          .style("stroke-width", .25) ;
+          .style("opacity", .2)
+          // see below for an explanation of the calcLinear function
+          var yval = dataFilter.map(function (d) { return parseFloat(d[modelvalue]); });
+          var xval = dataFilter.map(function (d) { return parseFloat(d[obsvalue]); });
+          var lr = linearRegression(yval,xval);
+          d3.select("#"+rsquared).text(parseFloat(lr.r2).toPrecision(3));
+          var max = d3.max(dataFilter, function (d) { return d[obsvalue]; });
+          var myLine = svg.append("line")
+                      .attr("id", "line")
+                      .attr("x1", x(0))
+                      .attr("y1", y(lr.intercept))
+                      .attr("x2", x(max))
+                      .attr("y2", y( (max * lr.slope) + lr.intercept ))
+                      .style("stroke", "black");
+        }
 
-	  });
+
+        if (chart_id == '#scatter_vmt'){
+          d3.select("#catLinkVol").on("change", function(d) {
+            var selectedOption = d3.select(this).property("value")
+            if (selectedOption == 'all'){
+              filtername = "All"
+            } else if (selectedOption == 'arterials') {
+              filtername = "Arterial/Collector"
+            } else if (selectedOption == 'interstate'){
+              filtername = "Interstate"
+            }
+            update(filtername)
+          })
+        }
+    });
 
 	  function types(d){
 	    d[obsvalue] = +d[obsvalue];
@@ -151,32 +278,4 @@ function makeScatter(csv_file, chart_id, modelvalue,obsvalue,category_value,rsqu
 
 };
 
-
 }
-
-
-var legend = d3.select("#scatterLegend").append("svg")
-.attr("height", 75)
-.attr("width", 250)
-
-legend.selectAll("mydots")
-  .data(["#0E84AC", "#548E3F"])
-  .enter()
-  .append("circle")
-    .attr("cx", 10)
-    .attr("cy", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
-    .attr("r", 7)
-    .style("fill", function(d) { return d; })
-
-// Add one dot in the legend for each name.
-legend.selectAll("mylabels")
-  .data(["Arterial/Collector", "Interstate" ])
-  .enter()
-  .append("text")
-    .attr("x", 20)
-    .attr("y", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
-    .text(function(d){
-      return d})
-    .attr("text-anchor", "left")
-    .style("alignment-baseline", "middle")
-    .style("fill","black")

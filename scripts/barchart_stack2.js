@@ -143,6 +143,39 @@ function makeStackedChart_nodd2(csv_file,dataTitle,divID){
                 return "rotate(0)"
                 });
 
+      if (divID  == 'cfstack'){
+        var legend = d3.select("#vmtfacilityLegendNew").append("svg")
+        .attr("height", 75)
+        .attr("width", 250)
+
+        var keys = ["Local", "Arterial", "Interstate"]
+
+        var color = d3.scaleOrdinal()
+          .domain(keys)
+          .range(["#0E84AC", "#548E3F", "#D8BA37"])
+
+        legend.selectAll("mydots")
+          .data(keys)
+          .enter()
+          .append("circle")
+            .attr("cx", 10)
+            .attr("cy", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+            .attr("r", 7)
+            .style("fill", function(d) { return color(d); })
+
+        // Add one dot in the legend for each name.
+        legend.selectAll("mylabels")
+          .data(keys)
+          .enter()
+          .append("text")
+            .attr("x", 20)
+            .attr("y", function(d,i){ return 20 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+            .text(function(d){
+              return d})
+            .attr("text-anchor", "left")
+            .style("alignment-baseline", "middle")
+            .style("fill","black")
+      }
 
         // var legend = serie.append("g")
         // .attr("font-family", "sans-serif")

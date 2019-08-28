@@ -168,23 +168,23 @@ function updateview1(buttonarg) {
         census_count_var1 = 'HHWK_3p'
         whichone_name1 = '3+ worker households'
     }
-    else if (buttonarg == 'Households with 0 vehicles') {
+    else if (buttonarg == '0-vehicle households') {
         whichone1 = 'difAU_0'
         model_count_var1 = 'HHAU_0m'
         census_count_var1 = 'HHAU_0p'
-        whichone_name1 = 'Households with 0 vehicles'
+        whichone_name1 = '0-vehicle households'
     }
-    else if (buttonarg == 'Households where # vehicles < # workers') {
+    else if (buttonarg == '1-vehicle households') {
         whichone1 = 'difAU_1'
         model_count_var1 = 'HHAU_1m'
         census_count_var1 = 'HHAU_1p'
-        whichone_name1 = 'Households where # vehicles < # workers'
+        whichone_name1 = '1-vehicle households'
     }
-    else if (buttonarg == 'Households where # vehicles >= # workers') {
+    else if (buttonarg == '2+ vehicle households') {
         whichone1 = 'difAU_2'
         model_count_var1 = 'HHAU_2m'
         census_count_var1 = 'HHAU_2p'
-        whichone_name1 = 'Households where # vehicles >= # workers'
+        whichone_name1 = '2+ vehicle households'
     }
     return whichone1,
     updatemap1();
@@ -275,10 +275,22 @@ difflegend1.onAdd = function (map) {
 
     for (var i=0; i< grades.length-1; i++) {
         from = grades[i];
+        var from_str = String(from)
+        var middle = ' to '
         to = grades[i + 1];
+        var to_str = String(to)
+        if (i == 0){
+          from_str = ''
+          middle = ''
+          to_str = '-15+'
+        }
+        if (i == 6){
+          middle = ''
+          to_str = '+'
+        }
         labels.push(
             '<i style="background:' + getDiffColor1(from + 1) + '"></i> ' +
-            from + ' to ' + to)
+            from_str + middle + to_str)
     }
     div.innerHTML = "<h6>Difference</h6>" + labels.join('<br>');
     return div;

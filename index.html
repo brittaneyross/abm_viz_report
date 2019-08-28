@@ -133,13 +133,6 @@
               </ul>
               </li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a id="recall" style="display:none">
-                About
-                </a>
-              </li>
-            </ul>
 
               <!-- <ul class="nav navbar-nav navbar-right" id="abouttoggle">
               <li>
@@ -224,17 +217,17 @@
       </div>
 
       <div class="tab-content">
-          <div class="alert alert-info alert" role="alert" id="about">
-              <button type="button" class="close" id="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <div class="alert alert-info alert-dismissible" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
         <p style="margin-bottom:10px">
+            <strong>About:</strong> This report represents the results of model calibration and validation activities completed over the last several years by CMAP staff and their consultants.
           <strong>Model calibration</strong> is defined as the adjustment of model parameters and constants so that the models better replicate observed data for a base year. CMAP's ABM is calibrated to a base year of 2010.
           <strong>Model validation</strong> is defined as comparing the results of the calibrated models to observed data.
           Modeling best practice dictates that different data sets be used to conduct calibration and
           validation activities; in the absence of other observed data, the sources used for model
           calibration may be used for validation as long as they examine different aspects of the
-          data or rely on alternate geographic scopes. 
-          Model validation results in this report reflect 2015 conditions.
+          data or rely on alternate geographic scopes. Model validation results in this report reflect 2015 conditions.
         </p>
       </div>
 
@@ -281,7 +274,7 @@
                 based on each traveler's individual value of time and to improve model sensitivity to a wider range of nontraditional transit attributes, i.e., attributes such as service reliability, personal safety, station and vehicle cleanliness,
                 and
                 crowding that do not typically inform transit Level of Service calculations. Subsequent work on the ABM has focused on the calibration of selected submodels and the overall validation of the model results.
-                This report represents the results of model calibration and validation activities completed over the last several years by CMAP staff and their consultants.
+
               </p>
             </div><!-- end -->
 
@@ -664,8 +657,13 @@
             <div class="col-md-1"></div>
             <div class="col-md-2">
               <h3>Number of Households by Vehicles Owned</h3>
-              Total Households: <span class="modtotal"></span> Model, <span class="surveytotal"></span> Survey 
               <div id="autoLegend"></div>
+              <div id="auto_counts" style="width : 86%"></div>
+              <!-- <div class="small">
+                <b>Sources</b><br>
+                Observed - PUMS 2007-11 <br>
+                Modeled- PopSynIII <br>
+              </div> -->
             </div>
             <div class="col-md-6">
               <br>
@@ -686,8 +684,7 @@
               <h3>Auto Sufficiency</h3>
               <h5>Distribution of Auto Ownership by <div id="dtitle"></div>
               </h5>
-              Total Households: <span class="modtotal"></span> Model, <span class="surveytotal"></span> Survey 
-              <br><br>
+              <br>
               <select id="aoCat">
                 <option value="size">Household Size</option>
                 <option value="income">Household Income</option>
@@ -1742,11 +1739,12 @@
               <div class="btn-group" role="group">
                 <div class="btn-group" role="group">
                   <button type="button" id="hhval4" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Auto Sufficiency
+                    Household Vehicles
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="hhval4">
-                    <li><a class="dropdown-item">Households with 0 vehicles</a></li>
-                    <li><a class="dropdown-item">Households where # vehicles < # workers</a> </li> <li><a class="dropdown-item">Households where # vehicles >= # workers</a></li>
+                    <li><a class="dropdown-item">0-vehicle households</a></li>
+                    <li><a class="dropdown-item">1-vehicle households</a>
+                    </li> <li><a class="dropdown-item">2+ vehicle households</a></li>
                   </ul>
                 </div>
               </div>
@@ -1796,7 +1794,7 @@
             <div class="col-md-3">
               <h3>Comparison of Daily VMT Shares by County and Facility Type</h3>
               <br />
-              <div id="vmtfacilityLegend"></div>
+              <div id="vmtfacilityLegendNew"></div>
               <br />
             </div>
             <div class="col-md-6">
@@ -1813,6 +1811,13 @@
             <div class="col-md-1"></div>
             <div class="col-md-3">
               <h3>Modeled vs. Observed Average Daily Link Volumes</h3>
+              <br>
+              <select id="catLinkVol">
+                <option value="all">All</option>
+                <option value="arterials">Arterials</option>
+                <option value="interstate">Interstate</option>
+              </select><!-- end -->
+              <br><br>
               <br>
               <div id="scatterLegend"></div>
               <p><b>r<sup>2</sup></b> = <text_div id="r2"></text_div>
@@ -2211,7 +2216,7 @@
 <script type="text/javascript" src="scripts/modepies.js"></script>
 <script type="text/javascript" src="scripts/multiline.js"></script>
 <script type="text/javascript" src="scripts/multiline_dd.js"></script>
-<script type="text/javascript" src="scripts/alert_dismiss.js"></script>
+<script type="text/javascript" src="scripts/portion.js"></script>
 <!-- calling functions -->
 <script>
   makeGroupVBar("data/csv1_pop_syn.csv", "#PurposeChartpums", "#catPopSyn", 2, "popsynDesc", "hhtitle", "pumsLegend");
@@ -2307,7 +2312,7 @@
   make_multi_line_dd("data/csv37_tours_todv3.csv", "tod_line", "#todcat", "tourtod_legend")
 </script>
 
-<script type="text/javascript" src="data/json/Combined_WGS_Updated.js"></script>
+<script type="text/javascript" src="data/json/Combined_WGS_updated.js"></script>
 <script type="text/javascript" src="scripts/transitboardings.js"></script>
 <script type="text/javascript" src="scripts/hhvalidationmap.js"></script>
 <script type="text/javascript" src="scripts/intromap.js"></script>
@@ -2321,21 +2326,21 @@
     return d;
   }, function(error, data) {
     if (error) throw error;
-    tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External Area', 'Total'], "#caldiffcountyflow", "percent"); // 2 column table
+    tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External CMAP Modeling Area', 'Total'], "#caldiffcountyflow", "percent"); // 2 column table
   });
   d3.csv("data/csv47_modelworkflows_cal.csv", function(d, i, columns) {
     for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
     return d;
   }, function(error, data) {
     if (error) throw error;
-    tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External Area', 'Total'], "#modelcountyflow_cal", "nopercent"); // 2 column table
+    tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External CMAP Modeling Area', 'Total'], "#modelcountyflow_cal", "nopercent"); // 2 column table
   });
   d3.csv("data/csv48_ctpplworkflows_cal.csv", function(d, i, columns) {
     for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
     return d;
   }, function(error, data) {
     if (error) throw error;
-    tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External Area', 'Total'], "#ctppcountyflow_cal", "nopercent"); // 2 column table
+    tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External CMAP Modeling Area', 'Total'], "#ctppcountyflow_cal", "nopercent"); // 2 column table
   });
 
   d3.csv("data/csv46_valworkflows_diff.csv", function(d, i, columns) {
@@ -2343,21 +2348,21 @@
     return d;
   }, function(error, data) {
     if (error) throw error;
-    tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External Area', 'Total'], "#valdiffcountyflow", "percent"); // 2 column table
+    tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External CMAP Modeling Area', 'Total'], "#valdiffcountyflow", "percent"); // 2 column table
   });
   d3.csv("data/csv44_modelworkflows.csv", function(d, i, columns) {
     for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
     return d;
   }, function(error, data) {
     if (error) throw error;
-    tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External Area', 'Total'], "#modelcountyflow", "nopercent"); // 2 column table
+    tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External CMAP Modeling Area', 'Total'], "#modelcountyflow", "nopercent"); // 2 column table
   });
   d3.csv("data/csv45_ctpp2012workflows.csv", function(d, i, columns) {
     for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
     return d;
   }, function(error, data) {
     if (error) throw error;
-    tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External Area', 'Total'], "#ctpp2012countyflow", "nopercent"); // 2 column table
+    tabulate(data, ['Origin', 'Cook County', 'DuPage County', 'Kane County', 'Kendall County', 'Lake County', 'McHenry County', 'Will County', 'External CMAP Modeling Area', 'Total'], "#ctpp2012countyflow", "nopercent"); // 2 column table
   });
 
   d3.csv("data/csv42_busboardings.csv", function(d, i, columns) {
@@ -2439,10 +2444,7 @@
   }, function(error, data) {
     if (error) throw error;
     BarChart(data, "#aoCountBar", "")
-    $('.modtotal').text(d3.formatPrefix(".2s",1e6)(d3.sum(data.map(function(d){return d.Model}))))
-    $('.surveytotal').text(d3.formatPrefix(".2s",1e6)(d3.sum(data.map(function(d){return d.Observed}))))
-    }
-  );
+  });
 </script>
 
 </html>
